@@ -1,0 +1,30 @@
+@import '@/styles/variables';
+@import '@/styles/mixins';
+
+.header {
+    @include safe-area-top;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: $container-padding;
+    padding-right: $container-padding;
+    margin-bottom: 40px;
+}
+.loginButton {
+    display: flex;
+    align-items: center;
+    height: 36px;
+    padding: 12px;
+    vertical-align: middle;
+    font-weight: 600;
+    font-style: semibold;
+    background: rgba(255,255,255, 0.15);
+    color: white;
+    border: none;
+    border-radius: 16px;
+    padding: 8px 16px;
+    gap: 4px;
+}
+.logo {
+    height: 24px;
+}

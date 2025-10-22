@@ -1,0 +1,25 @@
+@import "@/styles/variables";
+@import "@/styles/mixins";
+
+.nav {
+  display: flex;
+  justify-content: start;
+  padding: 0 $container-padding;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.tab {
+  @include flexCenter;
+  @include font(13px, 20px);
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 16px;
+  color: white;
+  padding: 8px 16px;
+
+  &.active {
+    background-color: #ff5e26;
+    font-weight: 600;
+  }
+}

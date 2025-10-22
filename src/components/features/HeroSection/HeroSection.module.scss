@@ -1,0 +1,21 @@
+@import "@/styles/variables";
+@import "@/styles/mixins";
+
+.hero {
+  padding: 0 $container-padding;
+
+  h1 {
+    font-size: 28px;
+    font-weight: 800;
+    font-style: extabold;
+    margin-bottom: 8px;
+    line-height: 24px;
+    color: white;
+  }
+  p {
+    font-size: 15px;
+    line-height: 24px;
+    color: white;
+    white-space: pre-line;
+  }
+}

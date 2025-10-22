@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap');
+@import 'reset';
+@import 'variables';
+@import 'mixins';
+
+html, body {
+  font-size: 16px;
+  height: 100%;
+}
+
+body {
+  font-family: 'Wix Madefor Display', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: 0;
+  background: linear-gradient(135deg, $gradient-start, $gradient-end);
+}
+
+.pixel-perfect {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}

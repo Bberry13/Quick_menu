@@ -1,0 +1,25 @@
+@import "@/styles/variables";
+@import "@/styles/mixins";
+
+.main {
+  display: flex;
+  padding: $container-padding;
+}
+.tableInfo {
+  display: flex;
+  flex-direction: column;
+  border: 1px;
+  border-color: rgba(255, 255, 255, 0.15);
+  border-style: solid;
+  border-radius: 24px;
+  padding: $container-padding;
+  @include font(12px, 20px, 600);
+}
+.tableEdit {
+  display: flex;
+  justify-content: space-between;
+}
+.tableNumber {
+  display: flex;
+  gap: 8px;
+}
