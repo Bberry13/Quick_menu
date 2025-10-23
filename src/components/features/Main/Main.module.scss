@@ -2,24 +2,111 @@
 @import "@/styles/mixins";
 
 .main {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
   padding: $container-padding;
 }
 .tableInfo {
-  display: flex;
-  flex-direction: column;
+  @include flexColumn;
+  grid-template-rows: auto 1fr auto;
+  gap: 8px;
   border: 1px;
   border-color: rgba(255, 255, 255, 0.15);
   border-style: solid;
-  border-radius: 24px;
+  border-radius: $border-radius-lg;
   padding: $container-padding;
   @include font(12px, 20px, 600);
 }
 .tableEdit {
   display: flex;
   justify-content: space-between;
+  color: rgba(255, 255, 255, 0.6);
 }
 .tableNumber {
+  @include font(32px, 36px, 800);
+  align-self: start;
   display: flex;
   gap: 8px;
+}
+.urWaiter {
+  display: flex;
+  align-self: start;
+  margin-top: auto;
+  gap: 8px;
+}
+.waiterAvatar {
+  border: 1px solid white;
+  object-fit: cover;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+.waiterTitle {
+  @include flexColumn;
+  @include font(11px, 16px, 500);
+  color: rgba(255, 255, 255, 0.6);
+}
+.waiterName {
+  @include font(16px, 20px, 600);
+}
+.buttons {
+  @include flexColumn;
+  gap: 8px;
+}
+.buttonBlock {
+  @include flexColumn;
+  gap: 24px;
+  padding: 16px;
+  border-radius: $border-radius-lg;
+  background: rgba(255, 255, 255, 0.15);
+}
+.buttonBlockTitle {
+  display: flex;
+  justify-content: space-between;
+  @include font(16px, 20px, 800);
+}
+.buttonBlockText {
+  @include font(13px, 20px, 500);
+  color: rgba(255, 255, 255, 0.6);
+}
+.invoiceBlock {
+  box-shadow: rgba(17, 163, 91, 1) -4px 1px 12px inset,
+    rgba(0, 0, 0, 0.05) 0px 16px 28px;
+  background: linear-gradient(
+    30deg,
+    rgba(17, 163, 91, 0.1),
+    rgba(17, 163, 91, 0.1) 35%,
+    rgba(17, 163, 91, 0.35) 75%,
+    rgba(17, 163, 91, 0.75)
+  );
+  grid-column: 1 / -1;
+  padding: 16px;
+  border-radius: $border-radius-lg;
+  display: flex;
+  justify-content: space-between;
+}
+.tipsBlock {
+  box-shadow: rgba(22, 119, 255, 1) -4px 1px 12px inset,
+    rgba(0, 0, 0, 0.05) 0px 16px 28px;
+  background: linear-gradient(
+    30deg,
+    rgba(22, 119, 255, 0.1),
+    rgba(22, 119, 255, 0.1) 35%,
+    rgba(22, 119, 255, 0.35) 75%,
+    rgba(22, 119, 255, 0.75)
+  );
+  grid-column: 1 / -1;
+  padding: 16px;
+  border-radius: $border-radius-lg;
+  display: flex;
+  justify-content: space-between;
+}
+.shoppingBasket {
+  position: absolute;
+  padding: 12px;
+  right: 16px;
+  bottom: 16px;
+  background:rgba(255, 255, 255, 0.15);
+  border-radius: $border-radius-lg;
 }

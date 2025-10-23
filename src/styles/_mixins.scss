@@ -2,15 +2,19 @@
   padding-top: max(#{$status-bar-height}, #{$safe-area-top});
 }
 
-@mixin font($size, $lineHeight, $fontWeight: 500, $fontColor: white) {
+@mixin font($size, $lineHeight, $fontWeight: 500) {
   font-size: $size;
   line-height: $lineHeight;
   font-weight: $fontWeight;
-  color: $fontColor;
 }
 
 @mixin flexCenter {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
 }

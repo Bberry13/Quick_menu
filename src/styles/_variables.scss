@@ -3,4 +3,8 @@ $safe-area-top: env(safe-area-inset-top, 20px); // для iPhone с "чёлко�
 $container-padding: 16px;
 
 $gradient-start: #182C31;
-$gradient-end: #15262A;
+$gradient-end: #15262A; 
+
+$border-radius-sm: 8px;
+$border-radius-md: 16px;
+$border-radius-lg: 24px;

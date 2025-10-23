@@ -14,7 +14,7 @@
   @include font(13px, 20px);
   background: rgba(255, 255, 255, 0.15);
   border: none;
-  border-radius: 16px;
+  border-radius: $border-radius-md;
   color: white;
   padding: 8px 16px;
 
