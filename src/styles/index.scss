@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap');
-@import 'reset';
-@import 'variables';
-@import 'mixins';
+@import url("https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&family=Wix+Madefor+Display:wght@400..800&display=swap');
+@import "reset";
+@import "variables";
+@import "mixins";
 
-html, body {
+html,
+body {
   font-size: 16px;
   height: 100%;
 }
 
 body {
-  font-family: 'Wix Madefor Display', sans-serif;
+  font-family: "Wix Madefor Display", sans-serif;
   font-weight: 500;
   font-size: 13px;
   color: #fff;
@@ -18,7 +20,8 @@ body {
   background: linear-gradient(135deg, $gradient-start, $gradient-end);
 }
 
-.pixel-perfect {
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
+.app {
+  padding-left: env(safe-area-inset-left, 16px);
+  padding-right: env(safe-area-inset-right, 16px);
+  min-height: 100vh;
 }

@@ -1,11 +1,11 @@
-import BankCard from "@/assets/bank_Card.svg";
-import BurgerMenu from "@/assets/burger_Menu.svg";
-import Heart from "@/assets/heart.svg";
-import Human from "@/assets/human.svg";
-import Pencil from "@/assets/pencil.svg";
-import ShoppingBasket from "@/assets/Shopping_Basket.svg";
-import Table from "@/assets/table.svg";
-import WaiterAvatar from "@/assets/Waiter-Anna.webp";
+import BankCard from "@/assets/Main/bank_Card.svg";
+import BurgerMenu from "@/assets/Main/burger_Menu.svg";
+import Heart from "@/assets/Main/heart.svg";
+import Human from "@/assets/Main/human.svg";
+import Pencil from "@/assets/Main/pencil.svg";
+import ShoppingBasket from "@/assets/Main/Shopping_Basket.svg";
+import Table from "@/assets/Main/table.svg";
+import WaiterAvatar from "@/assets/Main/Waiter-Anna.webp";
 import styles from "@/components/features/Main/Main.module.scss";
 
 export default function Main() {

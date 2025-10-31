@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './header.module.scss'
-import Logo from '@/assets/logo.svg'
-import Login from '@/assets/login.svg'
+import Logo from "@/assets/Main/logo.svg";
+import Login from "@/assets/Main/login.svg";
 
 
 export default function Header() {

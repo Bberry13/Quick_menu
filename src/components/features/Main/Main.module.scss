@@ -85,6 +85,11 @@
   border-radius: $border-radius-lg;
   display: flex;
   justify-content: space-between;
+  img {
+    width: 33px;
+    height: 30px;
+    align-self: center;
+  }
 }
 .tipsBlock {
   box-shadow: rgba(22, 119, 255, 1) -4px 1px 12px inset,
@@ -101,6 +106,11 @@
   border-radius: $border-radius-lg;
   display: flex;
   justify-content: space-between;
+    img {
+    width: 33px;
+    height: 30px;
+    align-self: center;
+  }
 }
 .shoppingBasket {
   position: absolute;
